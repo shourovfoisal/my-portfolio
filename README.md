@@ -1,3 +1,11 @@
+# Creating My Portfolio
+
+__Inspired from the design from Dribbble__  
+[Carlos - Personal Portfolio Website](https://dribbble.com/shots/10724776-Carlos-Personal-Portfolio-Website)
+
+<br />
+<hr />
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
