@@ -1,9 +1,9 @@
-import Image from 'next/image'
+import { Welcome } from '@/components'
 
 export default function Home() {
   return (
-    <section className='container'>
-      
+    <section className='container pt-containerPaddingTop'>
+      <Welcome />
     </section>
   )
 }
