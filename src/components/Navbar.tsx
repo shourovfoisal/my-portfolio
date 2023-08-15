@@ -1,6 +1,6 @@
 "use client"
 import Link from 'next/link'
-import React, { MouseEvent, useEffect, useReducer } from 'react'
+import React, { useEffect, useReducer } from 'react'
 import { usePathname } from 'next/navigation'
 import type { PropsWithChildren } from 'react'
 import { FaCode } from 'react-icons/fa'

@@ -14,7 +14,7 @@ module.exports = {
       },
       padding: {
         wrapperPaddingBottom: "2.5rem",
-        containerPaddingTop: "5rem"
+        containerPaddingTop: "6rem"
       },
       colors: {
         // Color names
