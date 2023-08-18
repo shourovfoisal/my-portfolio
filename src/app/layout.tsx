@@ -18,10 +18,12 @@ export default function RootLayout({
       <body className={poppins.className}>
         {/* TODO make the container div for Navbar absolute/fixed, and the wrapper relative */}
         {/* This will let the hero/welcome section to calculate its own height independently  */}
-        <div className='wrapper pb-wrapperPaddingBottom bg-bgBlackTan'>
-          <div className="container pt-containerPaddingTop">
-            <Navbar />
-          </div>
+        <div className='siteWrapper pb-wrapperPaddingBottom bg-BlackTan'>
+          <section className="bg-BlackTan pt-sectionPadding">
+            <div className="container">
+              <Navbar />
+            </div>
+          </section>
           {children}
         </div>
       </body>

@@ -36,7 +36,7 @@ export const navigationReducer: Reducer<StateType, NavigationReducerAction> = (s
                     ...INITIAL_STATE,   // this resets the state, so no need looping and making inactive
                     [whichNav]: {
                         isActive: linkShouldBeActive,
-                        activeClasses: linkShouldBeActive ? "text-lightPastelOrange" : "text-ashGray"
+                        activeClasses: linkShouldBeActive ? "text-LightPastelOrange" : "text-ashGray"
                     }
                 }
             }

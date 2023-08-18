@@ -14,22 +14,26 @@ module.exports = {
       },
       padding: {
         wrapperPaddingBottom: "2.5rem",
-        containerPaddingTop: "6rem"
+        sectionPadding: "8rem"
       },
       colors: {
         // Color names
         // https://colors.artyclick.com/color-name-finder/
-        bgNightBlack: '#08080D',
+        // NightBlack: '#08080D',
+        NightBlack: '#29262C',
         ashGray: '#BCBABC',
-        pastelOrange: '#EFA649',
+        // pastelOrange: '#EFA649',
+        PastelOrange: '#FFC054',
         rockBlue: '#9DA9CE',
-        bgBlackTan: '#4F4346',
+        // BlackTan: '#4F4346',
+        BlackTan: '#38353C',
         pumpkinOrange: '#F86D09',
         siennaTan: '#A35623',
 
         // Shades made with
         // https://maketintsandshades.com/
-        lightPastelOrange: "#fceddb"
+        // lightPastelOrange: "#fceddb"
+        LightPastelOrange: "#FBE9CE"
       }
     },
     container: {

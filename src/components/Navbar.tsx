@@ -21,7 +21,7 @@ export const Navbar: Props = () => {
 
   return (
     <div className='grid grid-cols-1 md:grid-cols-2'>
-        <div className='flex justify-center md:justify-start mb-4 md:mb-0 text-6xl text-pastelOrange'>
+        <div className='flex justify-center md:justify-start mb-4 md:mb-0 text-6xl text-PastelOrange'>
             <Link href={`/`}>
               <FaCode />
             </Link>
