@@ -1,4 +1,4 @@
-import { Welcome } from '@/components'
+import { Commitment, Welcome } from '@/components'
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
       </section>
       <section className='bg-NightBlack py-sectionPadding'>
         <div className='container pt-containerPaddingTop'>
-          <Welcome />
+          <Commitment />
         </div>
       </section>
     </>
