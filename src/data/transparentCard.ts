@@ -1,6 +1,6 @@
-import { CardDataType } from "@/components/TransparentCard";
+import { CardDataType } from "@/components/common/TransparentCard";
 
-export const data: { [key: string]: CardDataType } = {
+export const transparentCardData: { [key: string]: CardDataType } = {
 	welcomeSection: {
 		context: "Introduction",
 		title: "React Developer",

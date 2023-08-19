@@ -3,8 +3,8 @@ import React from "react";
 import type { PropsWithChildren } from "react";
 import { FaFacebook, FaGithubAlt, FaLinkedin } from "react-icons/fa6";
 import { HiMail } from "react-icons/hi";
-import { TransparentCard } from "@/components";
-import { data } from "@/data/transparentCard";
+import { TransparentCard } from "@/components/common";
+import { transparentCardData } from "@/data";
 
 type Props = React.FC<PropsWithChildren & {}>;
 
@@ -46,7 +46,7 @@ export const Welcome: Props = () => {
 				</ul>
 			</div>
 			<div className="col-span-1 flex items-center">
-				<TransparentCard {...data.welcomeSection} />
+				<TransparentCard {...transparentCardData.welcomeSection} />
 			</div>
 		</div>
 	);
