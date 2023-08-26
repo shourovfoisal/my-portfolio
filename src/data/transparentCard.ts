@@ -19,4 +19,12 @@ export const transparentCardData: { [key: string]: CardDataType } = {
 		linkText: "hi@devshourov.com",
 		linkUrl: "mailto:hi@devshourov.com",
 	},
+	portfolioSection: {
+		context: "Portfolio",
+		title: "Selected Projects",
+		titleNextLine: "From the Previous Ones",
+		description: "Handpicked projects that represent my work quality.",
+		linkText: "Explore More",
+		linkUrl: "/works",
+	},
 };
