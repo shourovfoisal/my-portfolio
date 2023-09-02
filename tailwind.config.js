@@ -39,6 +39,21 @@ module.exports = {
 		},
 		container: {
 			center: true,
+			padding: "3rem",
+		},
+		// screens: {
+		// 	sm: "",
+		// 	md: "",
+		// 	lg: "750px",
+		// 	xl: "970px",
+		// 	"2xl": "1200px",
+		// },
+		screens: {
+			sm: "",
+			md: "640px",
+			lg: "768px",
+			xl: "1024px",
+			"2xl": "1280px",
 		},
 	},
 	plugins: [],
