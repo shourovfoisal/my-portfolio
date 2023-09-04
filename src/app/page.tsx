@@ -1,4 +1,11 @@
-import { Blogs, Commitment, Contact, Portfolio, Welcome } from "@/components";
+import {
+	Blogs,
+	Commitment,
+	Contact,
+	Footer,
+	Portfolio,
+	Welcome,
+} from "@/components";
 
 export default function Home() {
 	return (
@@ -29,6 +36,12 @@ export default function Home() {
 			<section className="bg-BlackTan py-sectionPadding">
 				<div className="container pt-containerPaddingTop">
 					<Contact />
+				</div>
+			</section>
+
+			<section className="bg-BlackTan py-sectionPadding">
+				<div className="container pt-containerPaddingTop">
+					<Footer />
 				</div>
 			</section>
 		</>

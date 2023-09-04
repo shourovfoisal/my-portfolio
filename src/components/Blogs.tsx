@@ -29,37 +29,32 @@ export const Blogs: Props = () => {
 	];
 
 	return (
-		<>
-			<div className="grid grid-cols-1 md:grid-cols-2">
-				<div className="col-span-1">
-					<div className="w-3/4">
-						<TransparentCard {...transparentCardData.blogsSection} />
-					</div>
-				</div>
-				<div className="col-span-1">
-					{blogPosts?.map(({ date, category, title, url }, idx) => (
-						<>
-							<div className="flex items-center py-6" key={url}>
-								<h3 className="flex-[3] text-xs text-ashGray">
-									{date} . {category}
-								</h3>
-								<h4 className="flex-[6] text-lg text-LightPastelOrange">
-									{title}
-								</h4>
-								<Link
-									className="flex-[1] text-PastelOrange"
-									href={`blog/${url}`}
-								>
-									<span>
-										<FaArrowRight className="ml-auto" />
-									</span>
-								</Link>
-							</div>
-							{idx + 1 < blogPosts.length && <hr className="border-BlackTan" />}
-						</>
-					))}
+		<div className="grid grid-cols-1 md:grid-cols-2">
+			<div className="col-span-1">
+				<div className="w-3/4">
+					<TransparentCard {...transparentCardData.blogsSection} />
 				</div>
 			</div>
-		</>
+			<div className="col-span-1">
+				{blogPosts?.map(({ date, category, title, url }, idx) => (
+					<>
+						<div className="flex items-center py-6" key={url}>
+							<h3 className="flex-[3] text-xs text-ashGray">
+								{date} . {category}
+							</h3>
+							<h4 className="flex-[6] text-lg text-LightPastelOrange">
+								{title}
+							</h4>
+							<Link className="flex-[1] text-PastelOrange" href={`blog/${url}`}>
+								<span>
+									<FaArrowRight className="ml-auto" />
+								</span>
+							</Link>
+						</div>
+						{idx + 1 < blogPosts.length && <hr className="border-BlackTan" />}
+					</>
+				))}
+			</div>
+		</div>
 	);
 };
