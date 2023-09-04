@@ -27,4 +27,16 @@ export const transparentCardData: { [key: string]: CardDataType } = {
 		linkText: "Explore More",
 		linkUrl: "/works",
 	},
+	blogsSection: {
+		context: "Blog",
+		title: "What's New?",
+		titleNextLine: "My Blog and News",
+	},
+	contactSection: {
+		title: "Got a Project?",
+		titleNextLine: "Let's Talk",
+		description: "Just send me an email and I will reach you within no time!",
+		linkText: "hi@devshourov.com",
+		linkUrl: "mailto:hi@devshourov.com",
+	},
 };

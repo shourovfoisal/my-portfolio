@@ -9,7 +9,7 @@ export const Commitment: Props = () => {
 		<>
 			<div className="grid grid-cols-1 md:grid-cols-2">
 				<div className="col-span-1">
-					<div className="w-1/2">
+					<div className="w-3/4">
 						<TransparentCard {...transparentCardData.commitmentSection} />
 					</div>
 				</div>
