@@ -20,7 +20,7 @@ module.exports = {
         // Color names
         // https://colors.artyclick.com/color-name-finder/
         NightBlack: "#29262C",
-        ashGray: "#BCBABC",
+        AshGray: "#BCBABC",
         PastelOrange: "#FFC054",
         DarkerPastelOrange: "#FFAD2D",
         BlackTan: "#38353C",
