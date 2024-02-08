@@ -19,15 +19,20 @@ module.exports = {
       colors: {
         // Color names
         // https://colors.artyclick.com/color-name-finder/
+        // Dark Theme Colors
         NightBlack: "#29262C",
         AshGray: "#BCBABC",
         PastelOrange: "#FFC054",
         DarkerPastelOrange: "#FFAD2D",
         BlackTan: "#38353C",
+        LightPastelOrange: "#FBE9CE",
+
+        // Light Theme Colors
+        naplesYellow: "#FCDA69",
+        lightThemeText: "#18171C",
 
         // Shades made with
         // https://maketintsandshades.com/
-        LightPastelOrange: "#FBE9CE",
       },
     },
     container: {
