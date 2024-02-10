@@ -13,11 +13,11 @@ export const Welcome: Props = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-3">
       <div className="col-span-2">
-        <h1 className="text-6xl font-semibold text-LightPastelOrange">
+        <h1 className="text-6xl font-semibold text-textLightPrimary dark:text-LightPastelOrange">
           Shourov <span className="block">Foisal.</span>
         </h1>
-        <hr className="w-14 ml-1 mt-4 border-t-8 border-t-PastelOrange" />
-        <ul className="social-navbar ml-1 mt-32 text-xl flex items-center gap-5 text-LightPastelOrange">
+        <hr className="w-14 ml-1 mt-4 border-t-8 border-t-textLightPrimary dark:border-t-PastelOrange" />
+        <ul className="social-navbar ml-1 mt-32 text-xl flex items-center gap-5 text-textLightPrimary dark:text-LightPastelOrange">
           <li>
             <Link
               target="_blank"

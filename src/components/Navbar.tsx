@@ -9,6 +9,7 @@ import {
   navigationReducer,
 } from "@/reducers";
 import { NAVIGATION_ACTIONS } from "@/reducers";
+import ThemeSwitch from "./common/ThemeSwitch";
 
 type Props = React.FC<PropsWithChildren & {}>;
 
@@ -38,7 +39,7 @@ export const Navbar: Props = () => {
 
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <div className="flex justify-center md:justify-start mb-4 md:mb-0 text-6xl text-PastelOrange">
+      <div className="flex justify-center md:justify-start mb-4 md:mb-0 text-5xl text-textLightPrimary dark:text-PastelOrange">
         <Link href={`/`}>
           <FaCode />
         </Link>
@@ -47,13 +48,17 @@ export const Navbar: Props = () => {
         {navigationData?.map((item) => (
           <li key={item.reducerName}>
             <Link
-              className={state?.[item.reducerName].activeClasses}
+              // className={state?.[item.reducerName].activeClasses}
+              className="text-textLightPrimary dark:text-AshGray"
               href={item.link}
             >
               {item.label}
             </Link>
           </li>
         ))}
+        <li>
+          <ThemeSwitch />
+        </li>
       </ul>
     </div>
   );

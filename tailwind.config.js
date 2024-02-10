@@ -28,8 +28,8 @@ module.exports = {
         LightPastelOrange: "#FBE9CE",
 
         // Light Theme Colors
-        naplesYellow: "#FCDA69",
-        lightThemeText: "#18171C",
+        bgLightSecondary: "#FCDA69",
+        textLightPrimary: "#18171C",
 
         // Shades made with
         // https://maketintsandshades.com/
@@ -47,5 +47,6 @@ module.exports = {
       "2xl": "1280px",
     },
   },
+  darkMode: "class",
   plugins: [],
 };
