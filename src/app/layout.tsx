@@ -1,8 +1,5 @@
-"use client";
-import { Navbar } from "@/components";
-import "./globals.css";
 import type { Metadata } from "next";
-import { ThemeContextProvider } from "@/contexts/ThemeContext";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Shourov Foisal",
@@ -14,21 +11,5 @@ export default function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return (
-    <html lang="en">
-      <ThemeContextProvider>
-        {children}
-        {/* <body className={poppins.className}>
-          <div className="pb-wrapperPaddingBottom bg-BlackTan">
-            <section className="bg-BlackTan pt-sectionPadding">
-              <div className="container">
-                <Navbar />
-              </div>
-            </section>
-            {children}
-          </div>
-        </body> */}
-      </ThemeContextProvider>
-    </html>
-  );
+  return <html lang="en">{children}</html>;
 }
