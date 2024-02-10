@@ -10,7 +10,7 @@ import {
 
 export default function Home() {
   return (
-    <div className="pb-wrapperPaddingBottom bg-BlackTan">
+    <>
       <section className="fixed z-50 flex items-center h-28 w-full bg-white dark:bg-BlackTan">
         <div className="container">
           <Navbar />
@@ -52,6 +52,6 @@ export default function Home() {
           <Footer />
         </div>
       </section>
-    </div>
+    </>
   );
 }
