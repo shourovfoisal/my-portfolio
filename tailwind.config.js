@@ -31,6 +31,11 @@ module.exports = {
         bgLightSecondary: "#FCDA69",
         textLightPrimary: "#18171C",
 
+        // Theme Collor
+        themeViolet: "#B197FC",
+        themeBlue: "#74C0FC",
+        themeGreen: "#63E6BE",
+        themeYellow: "#FFD43B",
         // Shades made with
         // https://maketintsandshades.com/
       },

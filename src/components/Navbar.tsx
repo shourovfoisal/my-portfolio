@@ -1,54 +1,35 @@
-"use client";
 import Link from "next/link";
-import React, { useEffect, useReducer, useState } from "react";
-import { usePathname } from "next/navigation";
 import type { PropsWithChildren } from "react";
-import { FaCode } from "react-icons/fa";
-import {
-  NAVIGATION_REDUCER_INITIAL_STATE,
-  navigationReducer,
-} from "@/reducers";
-import { NAVIGATION_ACTIONS } from "@/reducers";
+import React from "react";
+import { FaTerminal } from "react-icons/fa6";
 import ThemeSwitch from "./common/ThemeSwitch";
 
 type Props = React.FC<PropsWithChildren & {}>;
 
-export type NavigationItems = {
+export type NavigationItem = {
   label: string;
   link: string;
-  reducerName: string;
 };
 
-export const navigationData: NavigationItems[] = [
-  { label: "Services", link: "/services", reducerName: "services" },
-  { label: "Works", link: "/works", reducerName: "works" },
-  { label: "Blog", link: "/blog", reducerName: "blog" },
+export const navigationData: NavigationItem[] = [
+  { label: "Services", link: "/services" },
+  { label: "Works", link: "/works" },
+  { label: "Blog", link: "/blog" },
 ];
 
 export const Navbar: Props = () => {
-  const [state, dispatch] = useReducer(
-    navigationReducer,
-    NAVIGATION_REDUCER_INITIAL_STATE
-  );
-
-  const pathname = usePathname();
-
-  useEffect(() => {
-    dispatch({ type: NAVIGATION_ACTIONS.TOGGLE_ACTIVE, payload: pathname });
-  }, [pathname]);
-
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
-      <div className="flex justify-center md:justify-start mb-4 md:mb-0 text-5xl text-textLightPrimary dark:text-PastelOrange">
-        <Link href={`/`}>
-          <FaCode />
+      <div className="flex justify-center md:justify-start mb-4 md:mb-0 text-textLightPrimary dark:text-PastelOrange">
+        <Link href={`/`} className="flex gap-3 items-center text-2xl">
+          <FaTerminal className="text-themeGreen" />
+          <div className="mb-1">Dev Shourov</div>
         </Link>
       </div>
-      <ul className="navbar flex justify-center md:justify-end items-center text-2xl gap-6">
+      <ul className="navbar flex justify-center md:justify-end items-center text-base gap-6">
         {navigationData?.map((item) => (
-          <li key={item.reducerName}>
+          <li key={item.link}>
             <Link
-              // className={state?.[item.reducerName].activeClasses}
               className="text-textLightPrimary dark:text-AshGray"
               href={item.link}
             >
