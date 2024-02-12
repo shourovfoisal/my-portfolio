@@ -41,6 +41,13 @@ module.exports = {
       },
       animation: {
         "spin-slow": "spin 3s linear infinite",
+        scale: "scale 2s ease-in-out infinite",
+      },
+      keyframes: {
+        scale: {
+          "0%, 100%": { transform: "scale(1)" },
+          "50%": { transform: "scale(1.05)" },
+        },
       },
     },
     container: {

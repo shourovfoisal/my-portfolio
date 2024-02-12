@@ -24,7 +24,7 @@ export const Welcome: Props = () => {
         <div>
           <h1 className="text-5xl font-semibold text-textLightPrimary dark:text-LightPastelOrange">
             <div className="flex items-center gap-2.5">
-              <div className="overflow-hidden rounded-xl shadow-md hover:animate-spin-slow">
+              <div className="overflow-hidden rounded-xl shadow-md hover:scale-105">
                 <Image
                   src={js_logo}
                   width={50}
@@ -89,9 +89,21 @@ export const Welcome: Props = () => {
           </ul>
         </div>
       </div>
-      <div className="col-span-1 flex justify-end order-1 xl:order-2">
+      <div className="relative col-span-1 flex justify-end order-1 xl:order-2">
         {/* <TransparentCard {...transparentCardData.welcomeSection} /> */}
-        <Image src={blob} width={450} alt="Photo Background" />
+        <Image
+          src={blob}
+          width={450}
+          alt="Photo Background"
+          className="rotate-180"
+        />
+        <div className="absolute -top-10 -right-10 flex gap-3">
+          <hr className="w-5 mt-4 border-t-[1px] border-t-textLightPrimary dark:border-t-PastelOrange" />
+          <p className="font-medium text-lg">
+            &quot; Your Dream Web App,{" "}
+            <p className="block text-right">Just a Click Away! &quot;</p>
+          </p>
+        </div>
       </div>
     </div>
   );
