@@ -34,10 +34,13 @@ module.exports = {
         // Theme Collor
         themeViolet: "#B197FC",
         themeBlue: "#74C0FC",
-        themeGreen: "#63E6BE",
+        themeGreen: "#8EAB12",
         themeYellow: "#FFD43B",
         // Shades made with
         // https://maketintsandshades.com/
+      },
+      animation: {
+        "spin-slow": "spin 3s linear infinite",
       },
     },
     container: {
