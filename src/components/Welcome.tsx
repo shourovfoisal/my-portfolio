@@ -1,4 +1,4 @@
-import blob from "@/../../public/images/blob_bg.svg";
+import myPic from "@/../../public/images/myPic.png";
 import js_logo from "@/../../public/images/js_logo.png";
 import { AppButton } from "@/components/common";
 import Image from "next/image";
@@ -19,17 +19,17 @@ type Props = React.FC<PropsWithChildren & {}>;
 
 export const Welcome: Props = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2">
+    <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-20 md:gap-y-10 xl:gap-y-16 pb-20 xl:pb-0">
       <div className="col-span-1 flex items-center order-2 xl:order-1">
         <div>
-          <h1 className="text-5xl font-semibold text-textLightPrimary dark:text-LightPastelOrange">
+          <h1 className="text-3xl md:text-5xl font-semibold text-textLightPrimary dark:text-LightPastelOrange">
             <div className="flex items-center gap-2.5">
               <div className="overflow-hidden rounded-xl shadow-md hover:scale-105">
                 <Image
                   src={js_logo}
                   width={50}
                   alt="JS logo from wikimedia commons"
-                  className="cursor-pointer"
+                  className="cursor-pointer w-9 md:w-12"
                 />
               </div>
               Developer
@@ -39,7 +39,7 @@ export const Welcome: Props = () => {
 
           <div className="flex gap-4 mt-5">
             <hr className="w-10 ml-1 mt-8 border-t-[1px] border-t-textLightPrimary dark:border-t-PastelOrange" />
-            <h4 className="text-textLightPrimary dark:text-AshGray mt-5 text-sm leading-6 pr-24">
+            <h4 className="text-textLightPrimary dark:text-AshGray mt-5 text-sm leading-6 xl:pr-24">
               I love to develop web applications with the MERN stack. I build
               complex apps that are incredibly fast, resilient and secure. I am
               highly skilled in React, NextJS and ExpressJS.
@@ -89,20 +89,32 @@ export const Welcome: Props = () => {
           </ul>
         </div>
       </div>
-      <div className="relative col-span-1 flex justify-end order-1 xl:order-2">
-        {/* <TransparentCard {...transparentCardData.welcomeSection} /> */}
-        <Image
-          src={blob}
-          width={450}
-          alt="Photo Background"
-          className="rotate-180"
-        />
-        <div className="absolute -top-10 -right-10 flex gap-3">
-          <hr className="w-5 mt-4 border-t-[1px] border-t-textLightPrimary dark:border-t-PastelOrange" />
-          <p className="font-medium text-lg">
-            &quot; Your Dream Web App,{" "}
-            <p className="block text-right">Just a Click Away! &quot;</p>
-          </p>
+      <div className="col-span-1 flex order-1 xl:order-2">
+        <div className="relative w-fit mx-auto xl:mx-0 pt-8 md:pt-16 pb-8 xl:pb-0">
+          <div
+            style={{
+              maskImage: "url(/images/blob_bg.svg)",
+              maskRepeat: "no-repeat",
+              maskSize: "95%",
+            }}
+            className="h-[13rem] xs:h-[17rem] sm:h-[20rem] md:h-[25rem] lg:h-[27rem] 2xl:h-[34rem]"
+          >
+            <Image
+              src={myPic}
+              width={600}
+              className="w-[28rem] lg:w-[30rem]"
+              alt="Shourov Foisal"
+            />
+          </div>
+          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:top-0 xl:-top-12 2xl:-top-10 md:-right-6 xl:-right-8 2xl:-right-10 flex gap-3">
+            <hr className="w-5 mt-4 border-t-[1px] border-t-textLightPrimary dark:border-t-PastelOrange" />
+            <p className="font-medium text-lg whitespace-nowrap">
+              &quot; Your Dream Web App,{" "}
+              <span className="block text-right">
+                Just a Click Away! &quot;
+              </span>
+            </p>
+          </div>
         </div>
       </div>
     </div>
