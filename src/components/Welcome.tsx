@@ -1,18 +1,11 @@
-import myPic from "@/../../public/images/myPic.png";
 import js_logo from "@/../../public/images/js_logo.png";
+import myPic from "@/../../public/images/myPic.png";
 import { AppButton } from "@/components/common";
 import Image from "next/image";
-import Link from "next/link";
 import type { PropsWithChildren } from "react";
 import React from "react";
-import {
-  FaChevronDown,
-  FaGithubAlt,
-  FaLinkedin,
-  FaSquareFacebook,
-  FaThumbsUp,
-} from "react-icons/fa6";
-import { HiMail } from "react-icons/hi";
+import { FaChevronDown, FaThumbsUp } from "react-icons/fa6";
+import { Social } from "./Social";
 import { AppTextonlyButton } from "./common/AppTextonlyButton";
 
 type Props = React.FC<PropsWithChildren & {}>;
@@ -46,7 +39,7 @@ export const Welcome: Props = () => {
             </h4>
           </div>
 
-          <div className="mt-12 flex gap-10">
+          <div className="mt-12 flex gap-6 sm:gap-10 mx-auto sm:mx-0">
             <AppButton>
               <div className="flex justify-center items-center gap-3">
                 <span>Let&#39;s Talk!</span>
@@ -58,46 +51,22 @@ export const Welcome: Props = () => {
               <FaChevronDown />
             </AppTextonlyButton>
           </div>
-
-          <ul className="social-navbar ml-1 mt-10 text-2xl flex items-center gap-7">
-            <li>
-              <Link
-                target="_blank"
-                href={`https://www.facebook.com/shourovfoisal123/`}
-              >
-                <FaSquareFacebook className="text-[#1877f2]" />
-              </Link>
-            </li>
-            <li>
-              <Link target="_blank" href={`https://github.com/shourovfoisal`}>
-                <FaGithubAlt className="text-[#6e5494] text-3xl" />
-              </Link>
-            </li>
-            <li>
-              <Link
-                target="_blank"
-                href={`https://www.linkedin.com/in/shourovfoisal/`}
-              >
-                <FaLinkedin className="text-[#0a66c2]" />
-              </Link>
-            </li>
-            <li>
-              <Link target="_blank" href={`mailto:shourovcseruet@gmail.com`}>
-                <HiMail className="text-[#ea4335] text-3xl" />
-              </Link>
-            </li>
-          </ul>
+          <div className="flex flex-wrap items-center mt-14 gap-4 text-slate-400">
+            <p>Find Me On</p>
+            <hr className="w-10 border-t-[1px] border-t-textLightPrimary dark:border-t-PastelOrange" />
+            <Social />
+          </div>
         </div>
       </div>
-      <div className="col-span-1 flex order-1 xl:order-2">
-        <div className="relative w-fit mx-auto xl:mx-0 pt-8 md:pt-16 pb-8 xl:pb-0">
+      <div className="col-span-1 flex order-1 xl:order-2 pt-4 sm:pt-6 lg:pt-16">
+        <div className="relative w-fit mx-auto xl:mx-0 pb-8 xl:pb-0">
           <div
             style={{
               maskImage: "url(/images/blob_bg.svg)",
               maskRepeat: "no-repeat",
               maskSize: "95%",
             }}
-            className="h-[13rem] xs:h-[17rem] sm:h-[20rem] md:h-[25rem] lg:h-[27rem] 2xl:h-[34rem]"
+            className="xxs:h-[13rem] xs:h-[17rem] sm:h-[20rem] md:h-[25rem] lg:h-[27rem]"
           >
             <Image
               src={myPic}
@@ -106,7 +75,7 @@ export const Welcome: Props = () => {
               alt="Shourov Foisal"
             />
           </div>
-          <div className="absolute -bottom-10 left-1/2 -translate-x-1/2 md:-translate-x-0 md:top-0 xl:-top-12 2xl:-top-10 md:-right-6 xl:-right-8 2xl:-right-10 flex gap-3">
+          <div className="absolute -bottom-10 md:bottom-auto left-1/2 -translate-x-1/2 md:-translate-x-0 md:-top-16 md:-right-6 xl:-right-8 2xl:-right-10 flex gap-3">
             <hr className="w-5 mt-4 border-t-[1px] border-t-textLightPrimary dark:border-t-PastelOrange" />
             <p className="font-medium text-lg whitespace-nowrap">
               &quot; Your Dream Web App,{" "}
