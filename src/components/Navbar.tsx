@@ -21,7 +21,7 @@ export const Navbar: Props = () => {
   return (
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div className="flex justify-center md:justify-start mb-4 md:mb-0 text-textLightPrimary dark:text-PastelOrange">
-        <Link href={`/`} className="flex gap-3 items-center text-2xl">
+        <Link href={`/`} className="flex gap-3 items-center text-xxl">
           <FaTerminal className="text-themeGreen" />
           <div className="mb-1">Dev Shourov</div>
         </Link>

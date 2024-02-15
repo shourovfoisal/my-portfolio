@@ -12,8 +12,8 @@ type Props = React.FC<PropsWithChildren & {}>;
 
 export const Welcome: Props = () => {
   return (
-    <div className="grid grid-cols-1 xl:grid-cols-2 gap-y-20 md:gap-y-10 xl:gap-y-16 pb-20 xl:pb-0">
-      <div className="col-span-1 flex items-center order-2 xl:order-1">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-y-20 md:gap-y-10 xl:gap-y-16 pb-20 xl:pb-0">
+      <div className="col-span-1 flex items-center order-2 lg:order-1">
         <div>
           <h1 className="text-3xl md:text-5xl font-semibold text-textLightPrimary dark:text-LightPastelOrange">
             <div className="flex items-center gap-2.5">
@@ -39,7 +39,7 @@ export const Welcome: Props = () => {
             </h4>
           </div>
 
-          <div className="mt-12 flex gap-6 sm:gap-10 mx-auto sm:mx-0">
+          <div className="mt-12 flex justify-center gap-6 sm:gap-10 mx-auto sm:mx-0">
             <AppButton>
               <div className="flex justify-center items-center gap-3">
                 <span>Let&#39;s Talk!</span>
@@ -58,7 +58,8 @@ export const Welcome: Props = () => {
           </div>
         </div>
       </div>
-      <div className="col-span-1 flex order-1 xl:order-2 pt-4 sm:pt-6 lg:pt-16">
+
+      <div className="col-span-1 flex order-1 lg:order-2 pt-4 sm:pt-6 lg:pt-16">
         <div className="relative w-fit mx-auto xl:mx-0 pb-8 xl:pb-0">
           <div
             style={{
@@ -75,7 +76,7 @@ export const Welcome: Props = () => {
               alt="Shourov Foisal"
             />
           </div>
-          <div className="absolute -bottom-10 md:bottom-auto left-1/2 -translate-x-1/2 md:-translate-x-0 md:-top-16 md:-right-6 xl:-right-8 2xl:-right-10 flex gap-3">
+          <div className="absolute -bottom-10 md:bottom-auto left-1/2 -translate-x-1/2 md:-translate-x-0 md:-top-16 md:-right-6 xl:-right-8 xxl:-right-10 flex gap-3">
             <hr className="w-5 mt-4 border-t-[1px] border-t-textLightPrimary dark:border-t-PastelOrange" />
             <p className="font-medium text-lg whitespace-nowrap">
               &quot; Your Dream Web App,{" "}
