@@ -1,9 +1,10 @@
 "use client";
-import React, { PropsWithChildren } from "react";
+import React from "react";
+import { RFC } from "./Types";
 
-type Props = {} & React.AllHTMLAttributes<HTMLDivElement>;
+type AppButtonTextonlyProps = {} & React.AllHTMLAttributes<HTMLDivElement>;
 
-const Button: React.FC<PropsWithChildren<Props>> = ({
+const Button: RFC<AppButtonTextonlyProps> = ({
   children,
   className,
   ...props
@@ -23,4 +24,4 @@ const Button: React.FC<PropsWithChildren<Props>> = ({
   );
 };
 
-export const AppTextonlyButton = Button;
+export const AppButtonTextonly = Button;

@@ -1,11 +1,9 @@
-import React, { PropsWithChildren } from "react";
+import React from "react";
+import { RFC } from "./Types";
 
-type Props = React.AllHTMLAttributes<HTMLButtonElement>;
+type AppButtonProps = React.AllHTMLAttributes<HTMLButtonElement>;
 
-const Button: React.FC<PropsWithChildren<Props>> = ({
-  children,
-  className,
-}) => {
+const Button: RFC<AppButtonProps> = ({ children, className }) => {
   return (
     <button
       className={

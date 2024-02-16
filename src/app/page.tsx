@@ -1,10 +1,10 @@
 import {
   Blogs,
-  Commitment,
   Contact,
   Footer,
   Navbar,
   Portfolio,
+  Stats,
   Welcome,
 } from "@/components";
 
@@ -25,7 +25,7 @@ export default function Home() {
 
       <section className="py-sectionPadding bg-bgLightSecondary dark:bg-NightBlack">
         <div className="container pt-containerPaddingTop">
-          <Commitment />
+          <Stats />
         </div>
       </section>
 

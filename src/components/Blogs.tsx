@@ -1,12 +1,10 @@
-import React, { PropsWithChildren } from "react";
-import { TransparentCard } from "@/components/common";
+import { AppCardTransparent } from "@/components/common";
 import { transparentCardData } from "@/data";
 import Link from "next/link";
 import { FaArrowRight } from "react-icons/fa";
+import { RFC } from "./common/Types";
 
-type Props = React.FC<PropsWithChildren & {}>;
-
-export const Blogs: Props = () => {
+export const Blogs: RFC = () => {
   const blogPosts = [
     {
       date: "Feb 02",
@@ -32,7 +30,7 @@ export const Blogs: Props = () => {
     <div className="grid grid-cols-1 md:grid-cols-2">
       <div className="col-span-1">
         <div className="w-3/4">
-          <TransparentCard {...transparentCardData.blogsSection} />
+          <AppCardTransparent {...transparentCardData.blogsSection} />
         </div>
       </div>
       <div className="col-span-1">

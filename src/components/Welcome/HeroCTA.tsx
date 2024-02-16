@@ -1,10 +1,9 @@
 import js_logo from "@/../../public/images/js_logo.png";
 import { RFC } from "@/components/common/Types";
 import Image from "next/image";
-import { FaChevronDown, FaThumbsUp } from "react-icons/fa6";
+import { FaDownload, FaThumbsUp } from "react-icons/fa6";
 import { Social } from "../";
-import { AppButton } from "../common";
-import { AppTextonlyButton } from "../common/AppTextonlyButton";
+import { AppButton, AppButtonTextonly } from "../common";
 
 export const HeroCTA: RFC = () => {
   return (
@@ -40,10 +39,10 @@ export const HeroCTA: RFC = () => {
             <FaThumbsUp />
           </div>
         </AppButton>
-        <AppTextonlyButton>
+        <AppButtonTextonly>
           <p>CV</p>
-          <FaChevronDown />
-        </AppTextonlyButton>
+          <FaDownload />
+        </AppButtonTextonly>
       </div>
       <div className="flex flex-wrap justify-center md:justify-normal items-center mt-14 gap-4 text-slate-400">
         <p>Find Me On</p>

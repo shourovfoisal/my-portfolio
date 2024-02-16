@@ -1,9 +1,9 @@
 import { mono } from "@/fonts";
 import Link from "next/link";
-import React, { PropsWithChildren } from "react";
 import { FaArrowRight } from "react-icons/fa";
+import { RFC } from "./Types";
 
-export type CardDataType = {
+export type AppCardTransparentProps = {
   context?: string;
   title: string;
   titleNextLine: string;
@@ -12,9 +12,7 @@ export type CardDataType = {
   linkUrl?: string;
 };
 
-type Props = React.FC<PropsWithChildren & CardDataType>;
-
-export const TransparentCard: Props = ({
+export const AppCardTransparent: RFC<AppCardTransparentProps> = ({
   context,
   title,
   titleNextLine,
