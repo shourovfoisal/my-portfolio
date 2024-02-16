@@ -5,3 +5,7 @@
 body {
   background-color: #dee8ff;
 }
+
+* {
+  -webkit-tap-highlight-color: transparent !important;
+}

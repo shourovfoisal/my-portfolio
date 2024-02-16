@@ -56,7 +56,7 @@ module.exports = {
         DEFAULT: "1rem",
         xs: "2rem",
         sm: "2rem",
-        md: "2rem",
+        md: "3rem",
         lg: "3rem",
         xl: "4rem",
         xxl: "5rem",
