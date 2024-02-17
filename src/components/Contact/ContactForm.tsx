@@ -32,7 +32,7 @@ export const ContactForm: RFC = () => {
           Your Name
         </label>
         <input
-          className="mt-1 w-full outline-none py-2 bg-transparent border-b border-b-NightBlack text-AshGray"
+          className="w-full outline-none py-2 bg-transparent border-b border-b-NightBlack text-AshGray"
           id="name"
           type="text"
           {...register("name")}
@@ -46,7 +46,7 @@ export const ContactForm: RFC = () => {
           Your Email
         </label>
         <input
-          className="mt-1 w-full outline-none py-2 bg-transparent border-b border-b-NightBlack text-AshGray"
+          className="w-full outline-none py-2 bg-transparent border-b border-b-NightBlack text-AshGray"
           id="email"
           type="email"
           {...register("email")}
@@ -60,7 +60,7 @@ export const ContactForm: RFC = () => {
           And.. Your Message
         </label>
         <textarea
-          className="mt-1 w-full outline-none py-2 bg-transparent resize-none border-b border-b-NightBlack text-AshGray"
+          className="w-full outline-none py-2 bg-transparent resize-none border-b border-b-NightBlack text-AshGray"
           id="message"
           {...register("message")}
         />

@@ -27,7 +27,7 @@ export const Blogs: RFC = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-2">
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-y-8 md:gap-y-0">
       <div className="col-span-1">
         <div className="w-3/4">
           <AppCardTransparent {...transparentCardData.blogsSection} />
@@ -36,13 +36,43 @@ export const Blogs: RFC = () => {
       <div className="col-span-1">
         {blogPosts?.map(({ date, category, title, url }, idx) => (
           <>
+            <div
+              className="grid grid-cols-12 py-6 gap-y-1 lg:gap-y-0"
+              key={url}
+            >
+              <h3 className="col-span-12 lg:col-span-3 text-xs text-textLightPrimary dark:text-AshGray flex items-center">
+                {date} . {category}
+              </h3>
+
+              <h4 className="col-span-11 lg:col-span-8 text-base lg:text-md xl:text-lg text-textLightPrimary dark:text-LightPastelOrange flex items-center">
+                <Link href={`blog/${url}`}>{title}</Link>
+              </h4>
+
+              <Link
+                className="col-span-1 lg:col-span-1 text-textLightPrimary dark:text-PastelOrange flex justify-end items-center"
+                href={`blog/${url}`}
+              >
+                <span>
+                  <FaArrowRight className="ml-auto" />
+                </span>
+              </Link>
+            </div>
+            {idx + 1 < blogPosts.length && <hr className="border-BlackTan" />}
+          </>
+        ))}
+      </div>
+      {/* <div className="col-span-1">
+        {blogPosts?.map(({ date, category, title, url }, idx) => (
+          <>
             <div className="flex items-center py-6" key={url}>
               <h3 className="flex-[3] text-xs text-textLightPrimary dark:text-AshGray">
                 {date} . {category}
               </h3>
+              
               <h4 className="flex-[6] text-lg text-textLightPrimary dark:text-LightPastelOrange">
-                {title}
+                <Link href={`blog/${url}`}>{title}</Link>
               </h4>
+              
               <Link
                 className="flex-[1] text-textLightPrimary dark:text-PastelOrange"
                 href={`blog/${url}`}
@@ -55,7 +85,7 @@ export const Blogs: RFC = () => {
             {idx + 1 < blogPosts.length && <hr className="border-BlackTan" />}
           </>
         ))}
-      </div>
+      </div> */}
     </div>
   );
 };

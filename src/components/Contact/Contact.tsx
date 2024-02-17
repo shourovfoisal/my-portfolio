@@ -13,7 +13,7 @@ export const Contact: RFC = () => {
       </div>
 
       <div className="col-span-1">
-        <h2 className="text-3xl leading-10 text-textLightPrimary dark:text-LightPastelOrange mt-6">
+        <h2 className="text-3xl leading-10 text-textLightPrimary dark:text-LightPastelOrange">
           Or Maybe, <span className="block">Drop Me a Message</span>
         </h2>
         <ContactForm />
