@@ -11,7 +11,7 @@ export const HeroPerson: RFC = () => {
           maskRepeat: "no-repeat",
           maskSize: "95%",
         }}
-        className="xxs:h-[16.1rem] xs:h-[17.5rem] sm:h-[20.2rem] md:h-[25rem] lg:h-[27rem]"
+        className="xxs:h-[16.1rem] xs:h-[17.5rem] sm:h-[20.2rem] md:h-[25rem] lg:h-[27rem] overflow-clip"
       >
         <Image
           src={myPic}

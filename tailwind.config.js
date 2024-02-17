@@ -12,10 +12,7 @@ module.exports = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
-      padding: {
-        wrapperPaddingBottom: "2.5rem",
-        sectionPadding: "8rem",
-      },
+      padding: {},
       colors: {
         // Color names
         // https://colors.artyclick.com/color-name-finder/
@@ -59,7 +56,7 @@ module.exports = {
         md: "3rem",
         lg: "3rem",
         xl: "4rem",
-        xxl: "5rem",
+        xxl: "7rem",
       },
     },
     screens: {
