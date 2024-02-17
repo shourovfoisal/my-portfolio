@@ -1,5 +1,5 @@
 export { Blogs } from "./Blogs";
-export { Contact } from "./Contact";
+export { Contact } from "./Contact/Contact";
 export { Footer } from "./Footer";
 export { Navbar } from "./Navbar";
 export { Portfolio } from "./Portfolio";

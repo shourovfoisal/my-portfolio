@@ -6,13 +6,13 @@ type Props = {};
 export const Footer: React.FC<PropsWithChildren<Props>> = () => {
   return (
     <div>
-      <div className="flex justify-center text-6xl text-PastelOrange">
+      <div className="flex justify-center text-5xl text-themeGreen dark:text-PastelOrange">
         <FaCode />
       </div>
-      <p className="mt-3 text-LightPastelOrange text-center">
+      <p className="mt-3 text-textLightPrimary dark:text-LightPastelOrange text-center">
         Thanks for scrolling
       </p>
-      <p className="mt-3 text-LightPastelOrange text-center">
+      <p className="mt-3 text-textLightPrimary dark:text-LightPastelOrange text-center">
         Copyright &copy;2023 Shourov Foisal
       </p>
     </div>

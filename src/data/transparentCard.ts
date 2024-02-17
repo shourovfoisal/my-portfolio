@@ -31,6 +31,8 @@ export const transparentCardData: { [key: string]: AppCardTransparentProps } = {
     context: "Blog",
     title: "What's New?",
     titleNextLine: "My Blog and News",
+    linkText: "Checkout My Blog",
+    linkUrl: "/blog",
   },
   contactSection: {
     title: "Got a Project?",

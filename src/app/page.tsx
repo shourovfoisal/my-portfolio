@@ -47,7 +47,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="py-12 xs:py-16 sm:py-20 md:py-24 lg:py-28 xl:py-32 bg-white dark:bg-BlackTan">
+      <section className="pb-12 xs:pb-16 sm:pb-20 md:pb-24 lg:pb-28 xl:pb-32 bg-white dark:bg-BlackTan">
         <div className="container">
           <Footer />
         </div>
