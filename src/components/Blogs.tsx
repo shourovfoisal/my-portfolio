@@ -61,31 +61,6 @@ export const Blogs: RFC = () => {
           </>
         ))}
       </div>
-      {/* <div className="col-span-1">
-        {blogPosts?.map(({ date, category, title, url }, idx) => (
-          <>
-            <div className="flex items-center py-6" key={url}>
-              <h3 className="flex-[3] text-xs text-textLightPrimary dark:text-AshGray">
-                {date} . {category}
-              </h3>
-              
-              <h4 className="flex-[6] text-lg text-textLightPrimary dark:text-LightPastelOrange">
-                <Link href={`blog/${url}`}>{title}</Link>
-              </h4>
-              
-              <Link
-                className="flex-[1] text-textLightPrimary dark:text-PastelOrange"
-                href={`blog/${url}`}
-              >
-                <span>
-                  <FaArrowRight className="ml-auto" />
-                </span>
-              </Link>
-            </div>
-            {idx + 1 < blogPosts.length && <hr className="border-BlackTan" />}
-          </>
-        ))}
-      </div> */}
     </div>
   );
 };
